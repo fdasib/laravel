@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-main">
+        <h2 class="judul">Memperbaiki UI</h2>
+
+        <div class="container-main2">
+            <h2></h2>
+
+            <ul>
+                <li>kita akan membuat halaman post ini akan menampilkan hero postnya, post yang paling baru akan muncul besar sekali</li>
+                <li>post<sup>2</sup> dibawahnya akan muncul sebagai card<sup>2</sup> kecil</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/1.PNG" />
+                </div>
+                <li>buka view posts.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/2.PNG" />
+                </div>
+                <li>kita cek postinganya ada tidak, kita kasih sebuah kondisi dulu</li>
+                <li>kondisinya kita hitung dari jumlah postingannya</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/3.PNG" />
+                </div>
+                <li>kita masuk ke postcontroller untuk memperbaiki with, bisa kita letakkan di model</li>
+                <li>kita bisa mengasih tau agar setiap pemanggilan data post ini dia sudah membawa author dan category jadi withnya bisa kita simpan didalam model</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/4.PNG" />
+                </div>
+                <li>kita masuk lagi ke postcontroller</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/5.PNG" />
+                </div>
+                <hr>
+                <li>berarti kalo kita panggil postingan pertama pasti postingan terbaru</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/6.PNG" />
+                </div>
+                <li>diffForHumans : agar mudah dibaca manusia mengenai waktu, dari library carbon</li>
+                <li>selanjutnya bikin tombol</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/7.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/8.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/9.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/10.PNG" />
+                </div>
+                <li>tinggal kita atur foreach nya, pengen ngulang semua kecuali postingan pertama</li>
+                <li>pakai method skip</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/11.PNG" />
+                </div>
+                <li>kita bikin column ada 3</li>
+                <li>kita copy seperti card yang pertama</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/12.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/13.PNG" />
+                </div>
+                <li>hapus bagian bawah</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/14.PNG" />
+                </div>
+                <hr>
+                <li>buat label untuk category</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/15.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/16.PNG" />
+                </div>
+                <li>kita bikin supaya bisa diklik juga</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/17.PNG" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>membuat detail</h2>
+
+            <ul>
+                <li>buka file posts view</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/18.PNG" />
+                </div>
+                <ul>
+                    <li>Hasil : </li>
+                </ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/19.PNG" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>kita bikin dia banyak paragraf tapi paragraf itu tidak ada tag p</h2>
+
+            <ul>
+                <li>buka factory postFactory</li>
+                <li>paragraphs : untuk membuat beberapa paragraf</li>
+                <li>implode untuk join</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/20.PNG" />
+                </div>
+                <li>menggunakan collect</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/21.PNG" />
+                </div>
+                <li>menggunakan syntax php baru</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/22.PNG" />
+                </div>
+                <li>kita masuk ke file seeder databaseseeder</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/23.PNG" />
+                </div>
+                <li>kita php artisan</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/24.PNG" />
+                </div>
+                <li>ternyata ada yang salah yaitu belum dijoin</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/25.PNG" />
+                </div>
+                <li>buka lagi postfactorynya</li>
+                <li>tambahkan implode</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/26.PNG" />
+                </div>
+                <li>kita php artisan lagi</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/27.PNG" />
+                </div>
+                <ul>
+                    <li>Hasil : </li>
+                </ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/28.PNG" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>kita tambahkan gambar</h2>
+
+            <ul>
+                <li>buka file post view</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/29.PNG" />
+                </div>
+                <li>kita bungkus dengan article agar ada tujuan</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/30.PNG" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>kita edit untuk navbar</h2>
+
+            <ul>
+                <li>masuk ke view navbar.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/31.PNG" />
+                </div>
+                <li>kita masuk ke postcontroller untuk mengirimkan active</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/32.PNG" />
+                </div>
+                <li>kemudian kita masuk juga ke route web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/33.PNG" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>kita edit halama categories</h2>
+
+            <ul>
+                <li>kita buka bootstrap</li>
+                <li>kita cari Image Overlays di card</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/34.PNG" />
+                </div>
+                <li>kita copy pastekan di file view categories</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/35.PNG" />
+                </div>
+                <li>kita ubah card card-img-overlay menjadi flexbox</li>
+                <li>kenapa kita bikin flexbox : supaya isinya bisa disimpan ditengah<sup>2</sup></li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/36.PNG" />
+                </div>
+                <li>kita pengen semua bisa diclick</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/12/37.PNG" />
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

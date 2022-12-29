@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-main">
+        <h2 class="judul">Struktur Folder, Routes & View</h2>
+
+        <div class="container-main2">
+            <h2>Untuk mengetahui masing<sup>2</sup> fungsi folder</h2>
+
+            <ul>
+                <li>buka dokumentasinya : <a href="https://laravel.com/docs/9.x/structure" target="_blank" rel="noopener noreferrer">https://laravel.com/docs/9.x/structure</a></li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/1.png" />
+                </div>
+                <li>contohnya direktori app : tersimpan code utama dari aplikasi kita</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/2.png" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>MVC & Folder penting</h2>
+
+            <ul>
+                <li>Model : App/Models/</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/3.png" />
+                </div>
+                <li>View : resources/views/</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/4.png" />
+                </div>
+                <li>Controller : app/Http/Controllers</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/5.png" />
+                </div>
+                <li>Folder/file Routes : untuk kita melakukan routing / penjaluran</li>
+                <ul>
+                    <li>letak : routes/web.php</li>
+                    <div class="container-gmb">
+                        <img src="../aset/img/3/6.png" />
+                    </div>
+                    <li>kita akan register routes / penjaluran untuk web aplikasi kita</li>
+                    <li>jadi kalo misal kita mengetikkan apa diURL maka akan ditangani oleh routes yang mana</li>
+                    <li>secara default kita sudah dikasih 1 buah routes untuk menangani ketika user mengetikkan '/' atau routes dari website kita</li>
+                    <div class="container-gmb">
+                        <img src="../aset/img/3/7.png" />
+                    </div>
+                </ul>
+                <li>Folder Public</li>
+                <ul>
+                    <li>Tempat menyimpan aset<sup>2</sup> statis kita</li>
+                    <li>misal kita punya file css, js, img kita simpan dipublic</li>
+                </ul>
+                <li>file .env</li>
+                <ul>
+                    <li>ini adalah file untuk menentukan envirounment dari aplikasi laravel kita</li>
+                    <li>kedepannya kita mungkin akan mengubah isi dari file envirounment ini, misal kita akan terkoneksi ke database MySQL, username, password, dll</li>
+                    <li>kita ubah dulu APP_URL : http://127.0.0.1:8000/</li>
+                    <div class="container-gmb">
+                        <img src="../aset/img/3/8.png" />
+                    </div>
+                </ul>
+            </ul>
+
+            <hr>
+            
+            <h2>Kenapa pada saat kita akses URL yang tampil halaman ini</h2>
+
+            <div class="container-gmb">
+                <img src="../aset/img/3/9.png" />
+            </div>
+
+            <ul>
+                <li>kita pelajari routing</li>
+                <li>buka file routes/web.php</li>
+                <li>kita diberi route default</li>
+                <li>cara membacanya : </li>
+                <ul>
+                    <div class="container-gmb">
+                        <img src="../aset/img/3/10.png" />
+                    </div>
+                    <li>Route:: : jika ada rute</li>
+                    <li>get : method request get</li>
+                    <li>'/' : yang alamatnya adalah (slash / tidak memberi apa<sup>2</sup> selain nama  website kita)</li>
+                    <li>function : maka jalanakan ini</li>
+                    <li>view : tampilkan file ambil dari views</li>
+                </ul>
+                <li>jika kita ubah maka akan error</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/11.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/12.png" />
+                </div>
+                <li>karena kita sudah mengubah route nya menjadi milik /about</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/13.png" />
+                </div>
+                <li>sebenarnya kita bisa menampilkan apapun</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/14.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/15.png" />
+                </div>
+                <li>return view maksudnya : tampilkan sebuah view yang namanya welcome</li>
+                <ul>
+                    <li>laravelnya akan mencari sebuah file yang namanya welcome didalam folder view(resources/views)</li>
+                </ul>
+                <li>untuk nama views ada bladenya itu tempating engine</li>
+            </ul>
+
+            <hr>
+            
+            <h2>Mencoba routing dengan tulisan</h2>
+
+            <ul>
+                <li>buka file routes/web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/16.png" />
+                </div>
+                <li>Hasilnya : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/17.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/18.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/19.png" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>Menampilkan dengan view</h2>
+
+            <ul>
+                <li>masuk ke file routes/web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/20.png" />
+                </div>
+                <li>Hasilnya error karena belum membuat file viewnya</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/21.png" />
+                </div>
+                <li>buat file view baru</li>
+                <li>masuk folder resources/views/home.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/22.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/23.png" />
+                </div>
+                <li>Hasilnya : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/24.png" />
+                </div>
+                <li>buat juga untuk about dan posts</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/25.png" />
+                </div>
+                <li>hasil : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/26.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/27.png" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>Menambahkan CSS</h2>
+
+            <ul>
+                <li>Bikin file di folder public/style.css</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/28.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/29.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/30.png" />
+                </div>
+                <li>hasil : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/31.png" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>Menambahkan file JavaScript</h2>
+
+            <ul>
+                <li>Buat folder & file baru : public/js/script.js</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/32.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/33.png" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/34.PNG" />
+                </div>
+                <li>Hasil : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/35.png" />
+                </div> 
+            </ul>
+
+            <hr>
+            
+            <h2>Menambahkan gambar dan isi</h2>
+
+            <ul>
+                <li>buka file resources/views/about.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/36.png" />
+                </div>
+                <li>Hasil : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/37.png" />
+                </div>
+            </ul>
+
+            <hr>
+            
+            <h2>Mengirimkan data dari routes ke view</h2>
+
+            <ul>
+                <li>Menambahkan parameter tambahan</li>
+                <li>buka file routes/web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/38.png" />
+                </div>
+                <li>panggil nama key nya sebagai variable</li>
+                <li>buka file resources/views/about.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/39.png" />
+                </div>
+                <li>Hasil : </li>
+                <div class="container-gmb">
+                    <img src="../aset/img/3/40.png" />
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
