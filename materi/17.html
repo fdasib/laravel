@@ -105,7 +105,77 @@
                 <div class="container-gmb">
                     <img src="../aset/img/17/17.PNG" />
                 </div>
-                <li></li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/18.PNG" />
+                </div>
+                <li>jika kita menganggap sebuah eloquent di model kita sebagai resource itu merupakan sebuah kumpulan sebuah aksi yang biasanya kita bikin untuk melakukan sesuatu terhadap resource kita</li>
+                <li>misal apk kita punya foto / movie, kan biasanya kita akan melakukan CRUD</li>
+                <li>karena ini sudah umum dilakukan sebagai use case. laravel membuatkan sebuah route khusus untuk melakukan CRUD, yang dinamakan resource controller pada saat kita ketik make:controller pada saat diartisan, kita tambahkan --resource diakhirnya</li>
+                <li>sehingga otomatis dibuatkan controller yang sudah punya route ke patch ini :</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/19.PNG" />
+                </div>
+                <li>nanti didalam route web.php tidak perlu bikin route 1 per 1 untuk yang diatas</li>
+            </ul>
+
+            <hr>
+            
+            <h2>Specifying The Resource Model</h2>
+
+            <ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/20.PNG" />
+                </div>
+                <li>kita bisa langsung menentukan route model bunding untuk controller baru kita</li>
+                <li>kita akan memberi tahu bahwa controller yang kita punya selain bentuk resource dia juga langsung terhubung dengan model yang mana</li>
+            </ul>
+
+            <hr>
+            
+            <h2>kita coba</h2>
+
+            <ul>
+                <li>ketik di artisan:</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/21.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/22.PNG" />
+                </div>
+                <li>didalamnya sudah terhubung dengan model post dan ada banyak method</li>
+            </ul>
+
+            <hr>
+            
+            <ul>
+                <li>kita masuk ke route web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/23.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/24.PNG" />
+                </div>
+                <li>kita buka DashboardPostController</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/25.PNG" />
+                </div>
+                <ul>
+                    <li>Hasil : </li>
+                </ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/26.PNG" />
+                </div>
+                <hr>
+                <li>kita masuk lagi ke DashboardPostController</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/27.PNG" />
+                </div>
+                <li>kita buat folder baru di folder dashboard/posts/index.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/28.PNG" />
+                </div>
+                <li>isinya sama kan dengan index dashboard index nya</li>
+                
             </ul>
         </div>
     </div>
