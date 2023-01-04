@@ -175,6 +175,161 @@
                     <img src="../aset/img/17/28.PNG" />
                 </div>
                 <li>isinya sama kan dengan index dashboard index nya</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/29.PNG" />
+                </div>
+                <ul>
+                    <li>Hasil : </li>
+                </ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/30.PNG" />
+                </div>
+                <li>kita benarkan dulu active classnya</li>
+                <li>kita bikin active nya lewat grequest</li>
+                <li>buka file dashboard/layouts/sidebar.blade.php</li>
+                <li>kita menggunakan Request</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/31.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/32.PNG" />
+                </div>
+                <li>kita edit lagi halaman dashboard/posts/index.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/33.PNG" />
+                </div>
+                <li>kita ambil data lewat post</li>
+                <li>buka file DashboardPostController.php</li>
+                <li>kita cek dulu mengambil semua data</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/34.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/35.PNG" />
+                </div>
+                <li>kita edit lagi jadi seperti ini karena sudah berhasil</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/36.PNG" />
+                </div>
+                <li>kita masuk lagi ke dashboard/posts/index.blade.php</li>
+                <li>kita cek dulu apakah sudah terkirim ke view</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/37.PNG" />
+                </div>
+                <ul>
+                    <li>Hasil : </li>
+                </ul>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/38.PNG" />
+                </div>
+                <li>kita edit untuk isinya yang pertama untuk nomor</li>
+                <li>dilaravel sudah dibuatkan</li>
+                <li>lihat dokumentasinya</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/39.PNG" />
+                </div>
+                <li>kalo kita pakai foreach kita bisa pakai loops variable</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/40.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/41.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/42.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/43.PNG" />
+                </div>
+                <li>kita edit sedikit</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/44.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/45.PNG" />
+                </div>
+                <li>kita tidak perlu menangani URLnya karena sudah ditangani route resourcenya</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/46.PNG" />
+                </div>
+                <li>tinggal kita tangani dibagian show</li>
+                <li>kita masuk ke file DashboardPostController.php</li>
+                <li>edit bagian method show untuk mengecek</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/47.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/48.PNG" />
+                </div>
+                <hr>
+                <li>tapi masih dalam bentuk id, bagaimana agar bisa dalam bentuk slug</li>
+                <li>caranya bikin route baru</li>
+                <li>buka file web.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/49.PNG" />
+                </div>
+                <li>ada cara ngakalinya : membuat slug sebagai nilai default pencarian</li>
+            </ul>
+
+            <hr>
+            
+            <h2>Membuat slug sebagai default pencarian</h2>
+
+            <ul>
+                <li>buka dokumentasi</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/50.PNG" />
+                </div>
+                <li>kadang<sup>2</sup> kita ingin agar si eloquent ini mencari model menggunakan column selain id, untuk melakukan ini kita harus kasih tau columnya didalam model</li>
+                <li>caranya kita bisa tulis diroute parameter</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/51.PNG" />
+                </div>
+                <li>kalo kita inginnya si model selalu menggunakan column didatabase selain id, caranya kita akan timpa menggunakan sebuah method getRouteKeyName didalam model kita</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/52.PNG" />
+                </div>
+                <li>kita copykan ke model post kita paling bawah(tidak wajib)</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/53.PNG" />
+                </div>
+                <li>hasilnya error</li>
+                <li>karena tidak ada slug 1</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/54.PNG" />
+                </div>
+                <li>jadi kita ganti jadi slug buka file dashboard/post/index.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/55.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/56.PNG" />
+                </div>
+                <hr>
+                <li>tapi kita bukan menampilkan data tapi view</li>
+                <li>buka file DashboardPostController.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/57.PNG" />
+                </div>
+                <li>kita buat file baru dashboard/posts/show.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/58.PNG" />
+                </div>
+                <li>isinya kita copy dari dashboard/posts/index.blade.php dan view/post.blade.php</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/59.PNG" />
+                </div>
+                <li>kita edit</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/60.PNG" />
+                </div>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/61.PNG" />
+                </div>
+                <li>kita kasih link</li>
+                <div class="container-gmb">
+                    <img src="../aset/img/17/62.PNG" />
+                </div>
                 
             </ul>
         </div>
